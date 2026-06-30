@@ -13,3 +13,5 @@ def gotoGoogle(request):
     return redirect("https://google.com")
 
 
+def teams(request):
+    return render(request, "teams.html")
