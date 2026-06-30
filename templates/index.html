@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div  class="nav-header">
+      <img src="{% static 'images/logo.svg' %}" alt="">
+      <nav>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+        </ul>
+      </nav>
+      <button class="btn">CONTACT</button>
+      <img src="{% static 'images/icon-hamburger.svg' %}" alt="" class="hamburger">
+      <div class="mobile-menu">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+          <button class="menu-btn">CONTACT</button>
+        </div>
+      
+    </div>
+      <h1>WE ARE CREATIVES</h1>
+      <img src="{% static 'images/icon-arrow-down.svg' %}" alt="" class="header-img">
+  </header>
+  <section class="section-1">
+    <div class="box-1">
+      <h2>Transform your brand</h2>
+      <p> We are a full-service creative agency specializing in helping brands grow fast. 
+      Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <a href="">LEARN MORE</a>
+    </div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4">
+        <h2> Stand out to the right audience</h2>
+        <p> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="">LEARN MORE</a>
+    </div>
+   <div class="box-5">
+      <h3>Graphic design</h3>
+      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </div>
+    <div class="box-6">
+      <h3>Photography</h3>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="section-2">
+    <h2>CLIENT TESTIMONIALS</h2>
+    <div class="section-body">
+      <div class="test-1">
+      <img src="{% static 'images/image-emily.jpg' %}" alt="">
+      <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <div class="test-btm1">
+        <h3>Emily R.</h3>
+        <p>Marketing Director</p>
+      </div>
+    </div>
+    <div class="test-2">
+      <img src="{% static 'images/image-thomas.jpg' %}" alt="">
+      <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+      <div class="test-btm2">
+        <h3>Thomas S.</h3>
+        <p>Chief Operating Officer</p>
+      </div>
+    </div>
+    <div class="test-3">
+      <img src="{% static 'images/image-jennie.jpg' %}" alt="">
+      <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+      <div class="test-btm3">
+        <h3>Jennie F.</h3>
+        <p>Business Owner</p>
+      </div>
+    </div>
+  </section>
+  <section class="section-3">
+    <div class="desktop-images">
+      <img src="{% static 'images/desktop/image-gallery-milkbottles.jpg' %}" alt="">
+      <img src="{% static 'images/desktop/image-gallery-orange.jpg' %}" alt="">
+      <img src="{% static 'images/desktop/image-gallery-cone.jpg' %}" alt="">
+      <img src="{% static 'images/desktop/image-gallery-sugarcubes.jpg' %}" alt="">
+    </div>
+    <div class="mobile-images">
+      <img src="{% static 'images/mobile/image-gallery-milkbottles.jpg' %}" alt="">
+      <img src="{% static 'images/mobile/image-gallery-orange.jpg' %}" alt="">
+      <img src="{% static 'images/mobile/image-gallery-cone.jpg' %}" alt="">
+      <img src="{% static 'images/mobile/image-gallery-sugar-cubes.jpg' %}" alt="">
+    </div>
+    </div>
+  </section>
+  <footer>
+    <img src="{% static 'images/logo.svg' %}" alt="" class="btm-logo">
+    <div class="btm-nav">
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Projects</a></li>
+      </ul>
+    </div>
+    <div class="footer-images">
+      <img src="{% static 'images/icon-facebook.svg' %}" alt="">
+      <img src="{% static 'images/icon-instagram.svg' %}" alt="">
+      <img src="{% static 'images/icon-twitter.svg' %}" alt="">
+      <img src="{% static 'images/icon-pinterest.svg' %}" alt="">
+    </div>
+  </footer>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
